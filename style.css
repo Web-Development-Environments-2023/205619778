@@ -1,7 +1,70 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+*{padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
 }
+body{
+	font-family:'Lucida Sans';
+
+}
+nav{
+	top: 0;
+	border-radius: 10px;
+	background: #405ee7;
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	padding: 10px;
+	box-shadow: 0 25px 20px -20px rgba(0,0,0,0.4);
+}
+
+nav ul{
+	float: right;
+	padding-top: 0px;
+	overflow: hidden;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 13px 35px;
+	margin: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #777;
+	cursor: pointer;
+	position: fixed;
+	position: relative;
+	z-index: 2;
+	transition: color 0.5s;
+}
+nav ul li::after{
+	content: '';
+	background: #f44566;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	position: absolute;
+	top: 100%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+	text-transform:uppercase;
+	opacity: 0;
+	transition: top 0.5s, opacity 0.5s;
+}
+nav ul li:hover{
+	color: #fff;
+
+}
+nav ul li:hover::after{
+	top: 50%;
+	opacity: 1;
+
+}
+
+.main{
+	margin-top: 30px;
+	text-align: center;
+}
+
