@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="1HEmXqoi"></script>
   <nav>
-
     <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#photos">My Photos</a></li>
-      <li><a href="#playlist">My Playlist</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#playlist">Playlist</a></li>
       <li><a href="#like">Like</a></li>
       <li><a href="#qrcoder">QR code</a></li>
       <li><a href="#spa">Q&A</a></li>
       <li><a href="#contact">Contact Me</a></li>
     </ul>
 </nav>
-<div>class="main" 
+<div class="main"> 
 <section id="about" class="section">
+
 <br/>
 <br/>
 <br/>
@@ -27,20 +28,21 @@
 <br/>
 <br/>
 <br/>
+<br/><h1> About: </h1>
 <br/>
+צביקה (הֶנרִיק) פיק (3 באוקטובר 1949, י' בתשרי ה'תש"י – 14 באוגוסט 2022, י"ז באב ה'תשפ"ב) היה זמר, מלחין, מוזיקאי ושחקן ישראלי. הפריצה הגדולה שלו אל תודעת הקהל הרחב הגיעה כאשר נבחר לככב בתפקיד הראשי (קלוד) במחזמר "שיער", שהוצג בישראל ב־1970. לאורך שנות ה־70 זכה להצלחה גדולה בהופעות וברדיו עם מספר רב של להיטים וזכייה בתוארי זמר השנה ובפרסים.
+
+פיק הלחין את השיר "דיווה" בביצועה של דנה אינטרנשיונל, שזכה בתחרות האירוויזיון 1998. כזמר, התמודד בתחרות קדם-אירוויזיון שבע פעמים, יותר מכל אמן אחר, אך מעולם לא זכה.
+
+ב-2002 הועלה בתיאטרון "הבימה" המחזמר "מרי לו", המבוסס על שיריו של פיק, בכיכובם של אמיר פיי גוטמן, יעל בר-זוהר ואילנה אביטל. הפקה זו זכתה להצלחה רבה והוצגה למעלה מ-400 פעמים. ב-2016 המחזמר הוצג שוב בהפקה עצמאית.
+
+בפברואר 2011 קיבל את פרס אקו"ם על מפעל חיים בתחום הזמר העברי.
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
 <br/>
 <br/>
 <br/>
 </section>
+<hr class="rounded">
 
 <section id="photos" class="section">
 <br/>
@@ -50,20 +52,18 @@ about me
 <br/>
 <br/>
 <br/>
+<h1>Photos</h1>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
+<div class="img-gallery">
+  <img src="images\img1.jpeg">
+  <img src="images\img2.jpeg">
+  <img src="images\img3.jpeg">
+  <img src="images\img4.jpeg">
+</div>
 <br/>
 <br/>
 </section>
+<hr class="rounded">
 
 <section id="playlist" class="section">
 <br/>
@@ -73,28 +73,33 @@ my photos
 <br/>
 <br/>
 <br/>
+<h1>Playlist</h1>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLC6260E65C02B6752" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br/>
 <br/>
 <br/>
 </section>
+<hr class="rounded">
 
 <section id="like" class="section">
-<h1>Like my page </h1>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h1>Like my Site </h1>
+<br/>
 <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
 <br/>
 <br/>
 <br/>
 </section>
+<hr class="rounded">
 
 <section id="qrcoder" class="section">
 <br/>
@@ -103,6 +108,12 @@ my playlist
 <br/>
 <br/>
 <br/>
+<br/><h1>Scan my Code:</h1>
+<br/>
+<br/>
+<div class="qr">
+<img src="qrcode.jpg">
+</div>
 <br/>
 <br/>
 <br/>
@@ -110,14 +121,11 @@ my playlist
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-scan my code
 <br/>
 <br/>
 <br/>
 </section>
+<hr class="rounded">
 
 <section id="spa" class="section">
 <br/>
@@ -126,24 +134,62 @@ scan my code
 <br/>
 <br/>
 <br/>
+<br/><h1>Q&A</h1>
+<br/>
+<h3 dir="rtl">שלושה הבדלים עיקריים בין web1.0, web2.0 ו web3.0:
+</h3>
+<br/>
+<p dir="rtl"> <bold>אינטראקציה בין משתמשים: </bold>web 1.0 הייתה רשת סטטית שנועדה בעיקר בהצגת מידע למשתמשים, האינטרנט בדרך כלל היה חד כיווני בו משתמשים יכולים רק לצרוך תוכן. ב web2.0 לעומת זאת הציגו פלטפורמות שיתפיות בו משתמשים יכלו ליצור ולשתף תוכן ולקיים אינטראקציה בין משתמשים. ב web3.0 לוקח את זה קדימה ומאפשר למשתמשים לייצר אינראקציה ללא צורך במתווכים.</p>
 <br/>
 <br/>
+<p dir="rtl">אינטרנט סמנטי: Web 1.0 ו- Web 2.0 תוכננו להיות ממוקדים בעיקר בהצגת מידע, בעוד ש- Web 3.0 תוכנן להיות חכם וסמנטי יותר. Web 3.0 שואף ליצור אינטרנט חכם ומקושר יותר, המסוגל להבין את משמעות הנתונים ולפרש אותם בהתאם. משמעות הדבר היא שמנועי חיפוש, למשל, יוכלו לספק תוצאות רלוונטיות ומדויקות יותר על ידי הבנת ההקשר והמשמעות של שאילתת החיפוש. </p>
 <br/>
 <br/>
+<p dir="rtl">ביזור: הבדל מרכזי נוסף בין Web 1.0, Web 2.0 ו- Web 3.0 הוא מידת הריכוזיות. Web 1.0 הייתה רשת מרכזית שבה התוכן נשלט על ידי כמה ארגונים ואנשים פרטיים. Web 2.0 הציג את הרעיון של ביזור במידה מסוימת על ידי הפעלת תוכן שנוצר על ידי משתמשים ופלטפורמות מדיה חברתית, אך עדיין הסתמך על שרתים מרכזיים כדי לאחסן ולנהל נתונים. Web 3.0, לעומת זאת, הוא אינטרנט מבוזר לחלוטין הבנוי על טכנולוגיית בלוקצ'יין. הוא מאפשר למשתמשים להחזיק ולשלוט בנתונים שלהם, ולקיים אינטראקציה עם משתמשים אחרים בצורה לא מהימנה ומבוזרת.</p>
 <br/>
 <br/>
+<h3 dir="rtl">דוגמאות ל use-case:
+</h3>
 <br/>
 <br/>
+<p dir="rtl">שליחת הודעה למשתמש, לא תתאפשר ב web1.0 ותתאפשר ב web2.0 באמצעות אתרים יעודיים בלבד וב web3.0 ללא אמצעים כלל.</p>
 <br/>
+<p dir="rtl">שאילתת חיפוש צריכה להיות מאוד מדוייקת ב web1.0 וב web2.0 בכדי להציג תוצאות רלוונטיות בעוד ב web3.0 אפשר לייצר שאילתה פחות מדוייקת ולקבל דיוק רב יותר בתוצאות</p>
 <br/>
-ans
-<br/>
+<p dir="rtl">שיתוף סרטון לא יתאפשר ב web1.0 לעומת זאת ב web2.0 יתאפשר באמצעות פלטפורמות ייעדויות ואחרי תהליך אישור בלבד וב web3.0 השיתוף יתאפשר ללא אישור ואפילו בצורה אנונימית לחלוטין</p>
 <br/>
 <br/>
 </section>
+<hr class="rounded">
 
 <section id="contact" class="section">
 <br/>
+<h1> Contact Me </h1>
+<br/>
+<div class="con">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<br/>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<br/>
+    <label for="email">E-Mail</label>
+    <input type="text" id="email" name="email" placeholder="Your Email..">
+<br/>    
+    <label for="subject">Subject</label>
+<br/>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+    <script type="text/javascript">
+        $('#subject').emojioneArea({pickerPosition: 'bottom'});
+        </script>
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 <br/>
 <br/>
 <br/>
@@ -159,11 +205,16 @@ ans
 <br/>
 <br/>
 <br/>
-contact me
+
 <br/>
 <br/>
 <br/>
 </section>
+<hr class="rounded">
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 <script type="text/javascript">

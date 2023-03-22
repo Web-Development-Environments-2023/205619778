@@ -3,37 +3,44 @@ margin: 0;
 text-decoration: none;
 list-style: none;
 box-sizing: border-box;
+font-family: 'Courier New', Courier;
+font-size: 18px;
 }
 body{
-	font-family:'Lucida Sans';
+	background-color: beige;
+	font-family: 'Courier New', Courier;
+
 
 }
 nav{
-	top: 0;
-	border-radius: 10px;
-	background: #405ee7;
+	top: 0;	
+	background: #8e5ceb;
 	height: 80px;
 	width: 100%;
 	position: fixed;
 	padding: 10px;
 	box-shadow: 0 25px 20px -20px rgba(0,0,0,0.4);
+
 }
 
 nav ul{
 	float: right;
 	padding-top: 0px;
 	overflow: hidden;
+	color: #000;
 }
 nav ul li{
 	list-style: none;
 	display: inline-block;
-	padding: 13px 35px;
+	padding: 10px 30px;
 	margin: 10px;
 	font-size: 18px;
 	font-weight: 500;
 	color: #777;
 	cursor: pointer;
 	position: fixed;
+	text-transform:uppercase;
+	text-align: center;
 	position: relative;
 	z-index: 2;
 	transition: color 0.5s;
@@ -49,7 +56,6 @@ nav ul li::after{
 	left:50%;
 	transform: translate(-50%,-50%);
 	z-index: -1;
-	text-transform:uppercase;
 	opacity: 0;
 	transition: top 0.5s, opacity 0.5s;
 }
@@ -66,5 +72,60 @@ nav ul li:hover::after{
 .main{
 	margin-top: 30px;
 	text-align: center;
+	font-size: 30px;
 }
+hr.rounded {
+	border-top: 8px solid #8e5ceb;
+	border-radius: 5px;
+  }
+input[type=text], select, textarea {
+	width: 100%; 
+	padding: 12px;
+	border: 1px solid #ccc; 
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px; 
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+  
+  input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #45a049;
+  }
+  
+  .cont {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+  }
+.img-gallery{
+	width:80% ;
+	margin: 100px auto 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px,1fr));	
+	grid-gap: 30px;
+}
+.img-gallery img{
+	width: 100%;
+	cursor: pointer;
 
+}
+.img-gallery img:hover{
+	transform: scale(0.8) rotate(-15deg);
+	border-radius: 20px;
+	box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+}
+.qr img{
+	width:40%;
+	margin-top: auto;
+	size: 0;
+}
